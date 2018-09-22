@@ -1,0 +1,59 @@
+<!--
+  Generated template for the EditarImcPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Contato</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating="">Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="contato.nome"></ion-input>
+    </ion-item>
+    <ion-grid >
+      <ion-row>
+        <ion-col width-95>
+          <ion-item>
+            <ion-label floating="">Telefone</ion-label>
+            <ion-input type="text" [(ngModel)]="contato.telefone"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col width-5>
+          <ion-item>
+            <a ion-button href="tel:{{contato.telefone}}">Ligar</a>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid >
+      <ion-row>
+        <ion-col width-95>
+          <ion-item>
+            <ion-label floating="">Celular</ion-label>
+            <ion-input type="text" [(ngModel)]="contato.celular"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col width-5>
+          <ion-item>
+            <a ion-button href="tel:{{contato.celular}}">Ligar</a>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+
+  <button ion-button full round (click)="alterarContato()">
+    Alterar Contato</button>
+  <button ion-button full round (click)="removerContato()">
+    Remover Contato</button>
+
+</ion-content>

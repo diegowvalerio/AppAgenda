@@ -1,0 +1,7 @@
+{
+  "name": "AppAtividade",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

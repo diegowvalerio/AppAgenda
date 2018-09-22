@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Agenda de Contatos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let conts of contatos | async" (click)="editarRemover(conts)">
+      <h2>{{conts.nome}}</h2>
+      <h3>{{conts.telefone}} / {{conts.celular}}</h3>
+    </ion-item>
+  </ion-list>
+  <ion-fab bottom right>
+
+    <button ion-fab mini (click)="cadastrar()">+</button>
+  </ion-fab>
+
+</ion-content>
