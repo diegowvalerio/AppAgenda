@@ -27,7 +27,7 @@
             <ion-input type="text" [(ngModel)]="contato.telefone"></ion-input>
           </ion-item>
         </ion-col>
-        <ion-col col-auto>
+        <ion-col col-4>
           <ion-item>
             <a ion-button href="tel:{{contato.telefone}}">Ligar</a>
           </ion-item>
@@ -36,13 +36,13 @@
     </ion-grid>
     <ion-grid >
       <ion-row>
-        <ion-col col-auto>
+        <ion-col>
           <ion-item>
             <ion-label floating="">Celular</ion-label>
             <ion-input type="text" [(ngModel)]="contato.celular"></ion-input>
           </ion-item>
         </ion-col>
-        <ion-col>
+        <ion-col  col-4>
           <ion-item>
             <a ion-button href="tel:{{contato.celular}}">Ligar</a>
           </ion-item>
