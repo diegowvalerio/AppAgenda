@@ -26,10 +26,11 @@ export class CadastrarContatoPage {
   }
 
   mostrarPublicidadeInterstital(){
-    if(this.platform.is('android')){
+    //if(this.platform.is('android')){
       const interstitialConfig: AdMobFreeInterstitialConfig = {
         // add your config here
         // for the sake of this example we will just use the test config
+
         id:'ca-app-pub-3925364440483118/5295050058',
         isTesting: true,
         autoShow: true
@@ -41,7 +42,7 @@ export class CadastrarContatoPage {
         // if we set autoShow to false, then we will need to call the show method here
       })
       .catch(e => console.log(e));
-    }
+    //}
   }
 
   ionViewDidLoad() {

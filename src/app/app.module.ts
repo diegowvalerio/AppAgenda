@@ -13,7 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 import { ContatoService } from '../service/contato.service';
-import { AdMobFree } from '@ionic-native/admob-free';
+import { AdMobFree, AdMobFreeInterstitialConfig, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 
 const config = {
   apiKey: "AIzaSyB7aYTx1KoB_onLUZQ1T0wrjF3STD2m_K4",
