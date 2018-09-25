@@ -31,7 +31,8 @@ export class CrudContato {
       const interstitialConfig: AdMobFreeInterstitialConfig = {
         // add your config here
         // for the sake of this example we will just use the test config
-        id:'ca-app-pub-3925364440483118/3243601781',
+      //  id:'ca-app-pub-3925364440483118/3243601781',
+      id:'ca-app-pub-3940256099942544/8691691433',
         isTesting: true,
         autoShow: true
       };

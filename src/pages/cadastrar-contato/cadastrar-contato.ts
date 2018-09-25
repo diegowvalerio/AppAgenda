@@ -31,7 +31,8 @@ export class CadastrarContatoPage {
         // add your config here
         // for the sake of this example we will just use the test config
 
-        id:'ca-app-pub-3925364440483118/5295050058',
+      //  id:'ca-app-pub-3925364440483118/5295050058',
+        id:'ca-app-pub-3940256099942544/1033173712',
         isTesting: true,
         autoShow: true
       };
